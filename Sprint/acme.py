@@ -11,6 +11,8 @@ class Product:
     """
     Class to model product which everything goes here
     
+    Parameters:
+    
     Product:
     -name (string)
     -price (integer with default value 10)
