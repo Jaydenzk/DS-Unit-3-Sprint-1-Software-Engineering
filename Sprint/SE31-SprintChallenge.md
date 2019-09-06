@@ -272,7 +272,7 @@ career here, you'll have to answer the following:
   slightly different things running on all of them. How could containers help us
   improve this situation?
 
-  Containers are helpful for standardize the all these users with different environments. They can access these libraries,                   packages and systems already set it up on containers for their work that users can collaborate much easier than before.
+  Containers are helpful for standardize the all these users with different environments. They can access these libraries,                   packages and systems already set it up on containers for their work that users can collaborates much easier than before.
 
 
 Answer both of these questions (baseline ~5 sentences) here in text.
