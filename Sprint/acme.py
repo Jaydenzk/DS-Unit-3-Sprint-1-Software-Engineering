@@ -38,8 +38,7 @@ stealability
 
 
 def stealability(self):
-        x = (self.price)/(self.weight)
-
+        
         """
         Determination of stealaility(self) is given price/a_weight
         
@@ -53,13 +52,14 @@ def stealability(self):
         otherwise return "Very stealable"
         
         """
+    x = (self.price)/(self.weight)
 
-        if x < 0.5:
-            return "Not so stealable..."
-        elif x >= 0.5 and x < 1:
-            return "Kinda stealable..."
-        else:
-            return "Very stealable!"
+    if x < 0.5:
+        return "Not so stealable..."
+    elif x >= 0.5 and x < 1:
+        return "Kinda stealable..."
+    else:
+        return "Very stealable!"
 
 
 def explode(self):
