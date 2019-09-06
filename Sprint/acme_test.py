@@ -35,8 +35,16 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(len(num), 30)
 
     def test_legal_names(self):
-        prod = random.choice(ADJECTIVES) + ' ' + random.choice(NOUNS)
-
+        gp = generate_products()
+        names = [x.name for x in gp]
+        for name in names:
+            self.assertEqual(len(name.split(' ')), 2)
+        for name in names:
+            new_name = name.split(' ')
+            ads = new_name[0]
+            nns = new_name[1]
+            self.assertIn(ads, ADJECTIVES)
+            self.assertIn(nns, NOUNS)
 
 if __name__ == '__main__':
     unittest.main()
