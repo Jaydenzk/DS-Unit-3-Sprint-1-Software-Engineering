@@ -12,7 +12,7 @@ class Product:
     Class to model product which everything goes here
     
     Product:
-    -name (string with no default)
+    -name (string)
     -price (integer with default value 10)
     -weight (integer with default value 20)
     -flammability (float with default value 0.5)
