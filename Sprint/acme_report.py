@@ -11,6 +11,7 @@ NOUNS = ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', '???']
 
 
 def generate_products(N=30):
+    """Generate products default n=30, random and return it as list"""
     products = []
 
     for i in range(N):
@@ -25,6 +26,7 @@ def generate_products(N=30):
 
 
 def inventory_report(products):
+    """Inventory report prints a summary of products"""
     print('ACME INVENTORY REPORT\\N')
 
     names = len(set([x.name for x in products]))
