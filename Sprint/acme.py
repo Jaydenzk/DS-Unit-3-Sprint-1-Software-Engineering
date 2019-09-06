@@ -65,7 +65,7 @@ def stealability(self):
 def explode(self):
 
     """
-    Determination of explode is given flammability/weight
+    Determination of explode(self) is given flammability/weight
     if the ratio:
     less than 10 
     return "...fizzle"
@@ -94,8 +94,8 @@ Subclass BoxingGlove
 class BoxingGlove(Product):
 
     """
-    Class to model BoxingGlove and default weight change to 10
-    If override the explode method to always "...it's a glove."
+    Class to model BoxingGlove(Product) and default weight change to 10 rest are remain same
+    If override the explode method always print "...it's a glove."
     """
 
     random = random.randint(1000000, 9999999)
@@ -117,7 +117,7 @@ def explode(self):
 
 def punch(self):
     """
-    Determination of punch is given glove weight
+    Determination of punch(self) is given glove weight
     
     If the weight: 
     less than 5
