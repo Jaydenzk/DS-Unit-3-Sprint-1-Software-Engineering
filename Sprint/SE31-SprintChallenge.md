@@ -264,9 +264,16 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+  
+  I think the most important part of code reviews would be a finding small mistakes which most likely can be misspell, syntax, spacing and   etc. I alwyas make those mistakes which it gives me a lot of error in page so i will definitely look for those errors first. Also, I       need to be able to read someone elses code to undertand which it has to be clean code in order to do so. Comments and explanation would   be also good way to do this.
+  
+  
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+
+  Containers are helpful for standardize the all these users with different environments. They can access these libraries,                   packages and systems already set it up on containers for their work that users can collaborate much easier than before.
+
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
