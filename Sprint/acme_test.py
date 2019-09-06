@@ -16,10 +16,12 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.price, 10)
 
     def test_default_product_weight(self):
+        """Test default product weight is 20"""
         prod = Product('Test Product')
         self.assertEqual(prod.weight, 20)
 
     def test_default_product_flammability(self):
+        """Test default product flammabillity is 0.5""" 
         prod = Product('Test Product')
         self.assertEqual(prod.flammability, 0.5)
 
@@ -35,6 +37,7 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(len(num), 30)
 
     def test_legal_names(self):
+        """Check the test default names which it is ADJECTIVES, space and NOUNS"""
         gp = generate_products()
         names = [x.name for x in gp]
         for name in names:
