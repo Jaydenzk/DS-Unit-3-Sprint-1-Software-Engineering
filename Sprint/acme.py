@@ -9,7 +9,16 @@ import numpy as np
 class Product:
 
     """
-    Class to model product
+    Class to model product which everything goes here
+    
+    Product:
+    -name (string with no default)
+    -price (integer with default value 10)
+    -weight (integer with default value 20)
+    -flammability (float with default value 0.5)
+    -identifier (integer, automatically genererated as a random (uniform)
+    number anywhere from 1000000 to 9999999, includisve).
+    
     """
 
     random = random.randint(1000000, 9999999)
@@ -32,10 +41,17 @@ def stealability(self):
         x = (self.price)/(self.weight)
 
         """
-        Determination of stealaility is given price/a_weight 
-        when x<0.5 print "Not so stealable"
-        and 0.5<x<1 print "Kinda stealable"
-        otherwise print "Very stealable"
+        Determination of stealaility(self) is given price/a_weight
+        
+        if the ratio:
+        less than 0.5 
+        return "Not so stealable"
+        
+        greater than 0.5 but less than 1 
+        return "Kinda stealable"
+        
+        otherwise return "Very stealable"
+        
         """
 
         if x < 0.5:
@@ -50,9 +66,14 @@ def explode(self):
 
     """
     Determination of explode is given flammability/weight
-    when y<10 print "...fizzle"
-    and 10<y<50 print "...boom"
-    otherwise print "...BABOOM"
+    if the ratio:
+    less than 10 
+    return "...fizzle"
+    
+    greater than 10 but less than 50 
+    return "...boom"
+    
+    otherwise return "...BABOOM"
     """
 
     y = (self.flammability)*(self.weight)
@@ -74,6 +95,7 @@ class BoxingGlove(Product):
 
     """
     Class to model BoxingGlove and default weight change to 10
+    If override the explode method to always "...it's a glove."
     """
 
     random = random.randint(1000000, 9999999)
@@ -94,7 +116,19 @@ def explode(self):
 
 
 def punch(self):
-    """Determination of punch is given glove weight"""
+    """
+    Determination of punch is given glove weight
+    
+    If the weight: 
+    less than 5
+    return "That tickles."
+    
+    greater than 5 but less than 15
+    return "Hey that hurt!"
+    
+    greater than 15
+    return "OUCH!"
+    """
     if self.weight < 5:
         print("That tickles.")
     elif self.weight < 15:
